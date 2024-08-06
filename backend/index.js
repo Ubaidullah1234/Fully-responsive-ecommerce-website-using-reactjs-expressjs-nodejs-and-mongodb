@@ -10,17 +10,39 @@ const { type } = require("os");
 const port = 4000;
 const app = express();
 
+
+
 // Middleware
 app.use(bodyParser.json()); // Use body-parser to parse JSON payloads
 app.use(cors());
 
-// Database connection
-mongoose.connect("mongodb+srv://momin:FaCiEt123@cluster0.aymnz3w.mongodb.net/node_ecommerce", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
-.then(() => console.log("Connected to MongoDB"))
-.catch(error => console.log("Error connecting to MongoDB: ", error));
+// Database connection setup
+
+// Note: For security reasons, the MongoDB connection string is not included directly in this file.
+// You need to provide your own MongoDB connection string.
+
+// 1. Replace the empty string in the `mongoose.connect` method with your MongoDB connection URI.
+//    Example:
+//    mongoose.connect("mongodb+srv://<username>:<password>@<cluster-url>/<database>", {
+//        useNewUrlParser: true,
+//        useUnifiedTopology: true
+//    })
+//    .then(() => console.log("Connected to MongoDB"))
+//    .catch(error => console.log("Error connecting to MongoDB: ", error));
+
+// 2. Ensure that you have set up a MongoDB database and obtained your connection URI.
+//    - Replace `<username>`, `<password>`, `<cluster-url>`, and `<database>` with your MongoDB credentials and database details.
+
+// 3. Make sure not to commit sensitive information such as your connection string to version control.
+//    - Use environment variables or other secure methods to manage sensitive data.
+
+//Here's Mongodb connection code Modify it accordint to ur URLI
+//mongoose.connect("", {
+  //  useNewUrlParser: true,
+    //useUnifiedTopology: true
+//})
+//.then(() => console.log("Connected to MongoDB"))
+//.catch(error => console.log("Error connecting to MongoDB: ", error));
 
 // API creation
 app.get("/", (req, res) => {
