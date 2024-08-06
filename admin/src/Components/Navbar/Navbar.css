@@ -1,0 +1,87 @@
+/* Container for Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    box-shadow: 0 1px 3px -2px black;
+    margin-bottom: 1px;
+    background: white;
+    position: relative; /* Allows absolute positioning of admin image */
+  }
+  
+  /* Container for logo and title */
+  .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust space between logo and title */
+  }
+  
+  /* Styles for nav-logo */
+  .nav-logo {
+    width: 50px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Styles for h1 */
+  .logo-title h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 40px; /* Adjust font size as needed */
+    color: #333; /* Adjust text color as needed */
+  }
+  
+  /* Styles for Admin Panel text */
+  .admin-panel {
+    margin: 0;
+    font-size: 18px; /* Adjust font size as needed */
+    color: red; /* Set text color to red */
+    margin-left: 5px;
+  }
+  
+  /* Styles for admin-image */
+  .admin-image {
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    border-radius: 50%; /* Makes the image round */
+    position: absolute; /* Position it relative to the nearest positioned ancestor */
+    top: 15px; /* Adjust top position as needed */
+    right: 15px; /* Adjust right position as needed */
+    margin-top: 15px;
+  }
+  
+  /* Media query for screens 800px wide or less */
+  @media (max-width: 800px) {
+    .navbar {
+      
+      padding-bottom: 35px;
+    }
+  
+    .logo-title {
+      gap: 10px; /* Maintain horizontal space between logo and title */
+      margin-right: 70px; /* Add space for admin image */
+    }
+  
+    .admin-image {
+      position: absolute; /* Ensure it's still positioned absolutely */
+      top: 15px; /* Ensure the top position is correct */
+      right: 15px; /* Ensure the right position is correct */
+      margin-bottom: 100px;
+    }
+
+    .logo-title h1 {
+        margin-top:15px ; /* Remove default margin */
+        font-size: 20px; /* Adjust font size as needed */
+        color: #333; /* Adjust text color as needed */
+      }
+      .admin-panel {
+        margin: 0;
+        font-size: 11px; /* Adjust font size as needed */
+        color: red; /* Set text color to red */
+        margin-left: 5px;
+      }
+      .nav-logo {
+        width: 40px; /* Adjust width as needed */
+        height: auto; /* Maintain aspect ratio */
+      }
+  }
+  

@@ -1,0 +1,62 @@
+/* Sidebar.css */
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #dfe3eb;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-item:hover {
+    background-color: #e9ecef;
+}
+
+.sidebar-item img {
+    width: 24px; /* Reduced size */
+    height: 24px; /* Reduced size */
+    margin-right: 10px;
+}
+
+.sidebar-item p {
+    margin: 0;
+    color: #343a40;
+    font-weight: 500;
+}
+
+.add-product-image {
+    border: 2px solid #28a745; /* Green border for the add product image */
+    border-radius: 50%; /* Circular border */
+    padding: 5px; /* Padding inside the border */
+}
+
+.list-product-image {
+    border: 2px solid #007bff; /* Blue border for the list product image */
+    border-radius: 10%; /* Slightly rounded corners */
+    padding: 5px; /* Padding inside the border */
+}
+
+@media(max-width:800px){
+    .sidebar{
+        padding: 30px 0px;
+        flex-direction: row;
+        width: 100%;
+        max-width: none;
+        height: auto;
+        justify-content: center;
+        gap: 30px;
+
+    }
+}
