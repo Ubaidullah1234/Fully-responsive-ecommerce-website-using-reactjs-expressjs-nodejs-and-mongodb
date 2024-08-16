@@ -53,7 +53,7 @@ This is a full-stack e-commerce web application built using React.js for the fro
 
 4. Start the backend server:
     ```sh
-    npm start
+   node index.js
     ```
 
 ### Frontend Setup
